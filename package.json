@@ -1,0 +1,37 @@
+{
+  "name": "react-server-component-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "build:client": "webpack --config webpack.config.js --env client",
+    "build:server": "webpack --config webpack.config.js --env server",
+    "build": "yarn build:client && yarn build:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grvpanchal/react-server-component-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grvpanchal/react-server-component-app/issues"
+  },
+  "homepage": "https://github.com/grvpanchal/react-server-component-app#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
